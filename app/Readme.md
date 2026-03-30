@@ -12,7 +12,7 @@
 3. link project to git repo
 4. initial commit
 
-## UI
+## UI design
 1. Textview - social spark  (heading)
 2. Plain text - input for time of  day 
 3. Add ID and Text
@@ -22,3 +22,13 @@
 6. Add ID and text 
 6. Clear button 
 7. Add Id and text 
+
+##Functionality 
+1. use android.widget .* to import instead of importing individually 
+2. link UI components
+3. give each UI component a functionality using the IF statement 
+4. if something else is picked , the app will suggest usable  alternatives 
+5. give the reset button its function , to clear the input of time of day and clear the  but restore it to it original value 
+6. add the exit  button  function - to exit the app 
+
+

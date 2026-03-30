@@ -29,18 +29,44 @@ class MainActivity : AppCompatActivity() {
         btnEnter.setOnClickListener {
             val timeofday = etInputTimeOfDay.text.toString().trim().lowercase()
 
+            val morningSuggestions= listOf(
+                "go work out with friends" ,
+                "let start the morning of with a prayer" ,
+                "share a funny meme with a friend"
+            )
+            val midMorningSuggestion= listOf(
+                "plan lunch with someone",
+                "send a voice note instead of texting",
+                "check on your colleague"
+            )
+            val afternoonSuggestion= listOf(
+                "get some important work done",
+                "ask a deep question and start a random convo",
+                "try a new cafe"
+            )
+            val eveningSuggestion= listOf(
+                "spend time with family",
+                "call someone you care about",
+                "play a game with friends online"
+            )
+            val nightSuggestion = listOf(
+                "switch your phone off ,give youself 8 hours of sleep ",
+                "send a goodnight message",
+                "end the day by spreading positivity"
+
+            )
             val suggestion: String
 
             if (timeofday== "morning" ){
-                suggestion= "go work out with friends"
+                suggestion= morningSuggestions.random()
             } else if (timeofday== "mid morning"){
-                suggestion= "plan lunch with someone"
+                suggestion= midMorningSuggestion.random()
             } else if (timeofday== "afternoon"){
-                suggestion= "get some important work done"
+                suggestion= afternoonSuggestion.random()
             } else if (timeofday== "evening"){
-                suggestion= "spend time with family"
+                suggestion= eveningSuggestion.random()
             } else if (timeofday== "night"){
-                suggestion= "switch your phone off ,give youself 8 hours of sleep "
+                suggestion= nightSuggestion.random()
             } else {
                 suggestion= "pick morning ,mid morning ,afternoon,evening or night"
             }
