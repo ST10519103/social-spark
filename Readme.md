@@ -163,4 +163,7 @@ The video shows:
 - Kotlin Help. (n.d.). Conditions and loops | Kotlin. [online] Available at: https://kotlinlang.org/docs/control-flow.html [Accessed 30 March. 20226].
 - Learn (2021). Learn Kotlin. [online] Codecademy. Available at: https://www.codecademy.com/learn/learn-kotlin?g_network=o&g_productchannel=&g_adid=&g_locinterest=&g_keyword=learn%20kotlin&g_acctid=243-039-7011&g_adtype=&g_keywordid=kwd-79715182650931:loc-168&g_ifcreative=&g_campaign=account&g_locphysical=137792&g_adgroupid=1275434296087406&g_productid=&g_source= [Accessed 30 March. 2026].
 - www.w3schools.com. (n.d.). Kotlin If ... Else Expressions. [online] Available at: https://www.w3schools.com/KOTLIN/kotlin_conditions.php [Accessed 30 Mar. 2026].
-- 
+- Hexley21 (2020). How to make long clickable clear button in Kotlin Android Studio. [online] Stack Overflow. Available at: https://stackoverflow.com/questions/63801950/how-to-make-long-clickable-clear-button-in-kotlin-android-studio [Accessed 29 March. 2026].
+- Bing. (2018). exit button kotline - Bing. [online] Available at: https://www.bing.com/search?pglt=299&q=exit+button+kotline&cvid=5c05d9f5e0994bff9edbc7f78e018042&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOdIBCDc4ODFqMGoxqAIIsAIB&FORM=ANNTA1&PC=HCTS [Accessed 30 March. 2026].
+- Chatterjee, A. (2020). Baeldung. [online] Baeldung on Kotlin. Available at: https://www.baeldung.com/kotlin/lists [Accessed 30 March. 2026].
+- mr kingcade (exit button )
