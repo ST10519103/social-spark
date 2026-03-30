@@ -13,10 +13,12 @@ import kotlin.math.log
 import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
+    //Tag used for logging in logcat
     private val  tag = "social spark"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        // sets the layout for the activity
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -29,11 +31,12 @@ class MainActivity : AppCompatActivity() {
         val tvSuggestion = findViewById<TextView>(R.id.tvSuggestion)
         val btnReset = findViewById<Button>(R.id.btnReset)
         val btnExit = findViewById<Button>(R.id.btnExit)
-
+// Button click listener for generating suggestion
         btnEnter.setOnClickListener {
             val timeofday = etInputTimeOfDay.text.toString().trim().lowercase()
             Log.d(tag, "user input received: $timeofday")
 
+            // Lists of suggestions for different times of day
             val morningSuggestions= listOf(
                 "go work out with friends" ,
                 "let start the morning of with a prayer" ,
@@ -60,6 +63,7 @@ class MainActivity : AppCompatActivity() {
                 "end the day by spreading positivity"
 
             )
+            // Variable to store the selected suggestion at random
             val suggestion: String
 
             if (timeofday== "morning" ){
@@ -73,16 +77,19 @@ class MainActivity : AppCompatActivity() {
             } else if (timeofday== "night"){
                 suggestion= nightSuggestion.random()
             } else {
+                // Handle invalid input
                 Log.w(tag,  "Invalid input entered")
                 suggestion= "pick morning ,mid morning ,afternoon,evening or night"
             }
             Log.d(tag, "suggestion generated: $suggestion")
             tvSuggestion.text = suggestion
         }
+        // Reset button clears input and resets suggestion text
         btnReset.setOnClickListener {
             etInputTimeOfDay?.text?.clear()
             tvSuggestion.text= "suggestion display"
         }
+        // Exit button closes the app completely
         btnExit.setOnClickListener {
             finishAffinity()
             exitProcess(0)
