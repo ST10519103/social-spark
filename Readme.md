@@ -148,7 +148,7 @@ Logcat in Android Studio was used to view these logs, which helped me:
 
 A demonstration of the application can be viewed here:
 
-[Insert your video link here]
+[https://drive.google.com/file/d/1koj4qE97KOy1fq1OPyzflDktX3Pf6u0u/view?usp=sharing]
 
 The video shows:
 
