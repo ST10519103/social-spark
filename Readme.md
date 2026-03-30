@@ -158,3 +158,9 @@ The video shows:
 * Reset functionality
 
 ## References
+- Goodtal (2023). Everything You Need to Know About Kotlin. [online] Goodtal.com. Available at: https://www.goodtal.com/app-developer/blog/everything-you-need-to-know-about-kotlin [Accessed 30 March. 2026].
+- joash (2024). Comprehensive Guide to Kotlin Programming. [online] DEV Community. Available at: https://dev.to/javadevone/comprehensive-guide-to-kotlin-programming-40kj [Accessed 30 March. 2026].
+- Kotlin Help. (n.d.). Conditions and loops | Kotlin. [online] Available at: https://kotlinlang.org/docs/control-flow.html [Accessed 30 March. 20226].
+- Learn (2021). Learn Kotlin. [online] Codecademy. Available at: https://www.codecademy.com/learn/learn-kotlin?g_network=o&g_productchannel=&g_adid=&g_locinterest=&g_keyword=learn%20kotlin&g_acctid=243-039-7011&g_adtype=&g_keywordid=kwd-79715182650931:loc-168&g_ifcreative=&g_campaign=account&g_locphysical=137792&g_adgroupid=1275434296087406&g_productid=&g_source= [Accessed 30 March. 2026].
+- www.w3schools.com. (n.d.). Kotlin If ... Else Expressions. [online] Available at: https://www.w3schools.com/KOTLIN/kotlin_conditions.php [Accessed 30 Mar. 2026].
+- 
