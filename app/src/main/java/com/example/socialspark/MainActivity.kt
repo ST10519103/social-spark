@@ -1,15 +1,19 @@
 package com.example.socialspark
 
+import android.nfc.Tag
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 // Instead of individual imports i used * to import everything from android.widget
 import android.widget.*
+import kotlin.math.log
 import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
+    private val  tag = "social spark"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -28,6 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         btnEnter.setOnClickListener {
             val timeofday = etInputTimeOfDay.text.toString().trim().lowercase()
+            Log.d(tag, "user input received: $timeofday")
 
             val morningSuggestions= listOf(
                 "go work out with friends" ,
@@ -68,8 +73,10 @@ class MainActivity : AppCompatActivity() {
             } else if (timeofday== "night"){
                 suggestion= nightSuggestion.random()
             } else {
+                Log.w(tag,  "Invalid input entered")
                 suggestion= "pick morning ,mid morning ,afternoon,evening or night"
             }
+            Log.d(tag, "suggestion generated: $suggestion")
             tvSuggestion.text = suggestion
         }
         btnReset.setOnClickListener {
